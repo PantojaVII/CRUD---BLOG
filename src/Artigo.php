@@ -17,6 +17,7 @@ class Artigo
         $artigos = $result->fetch_all(MYSQLI_ASSOC);
         return $artigos;
     }
+    
     public function exibirArtigo(String $id): array
     {
         $result = $this->mysql->prepare("select * from artigos where id = ?");
