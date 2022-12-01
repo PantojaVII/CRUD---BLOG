@@ -4,6 +4,8 @@ include 'src/Artigo.php';
 $obj_artigo = new Artigo($mysql);
 $artigo = $obj_artigo->exibirArtigo( $_GET['artigo']);
 
+
+
 ?>
 
 <!DOCTYPE html>
